@@ -128,13 +128,13 @@ Q(t+1)=T′Q(t)+TQ(t)′
 
 ## PROGRAM :
 
-```
+```python
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: MIDHUN AZHAHU RAJA P
 RegisterNumber:  22008311
 ```
 - ### SR FLIPFLOP :
-
+```python
 module srexp(S,R,clk,Q,Qbar);  
 input S,R,clk;  
 output Q,Qbar;  
@@ -144,9 +144,9 @@ nand (Y,R,clk);
 nand (Q,X,Qbar);  
 nand (Qbar,Y,Q);  
 endmodule  
-
+```
 - ### JK FLIPFLOP :
-
+```python
 module jkexp(J,K,clk,Q,Qbar);  
 input J,K,clk;  
 output Q,Qbar;  
@@ -156,9 +156,9 @@ nand (Y,K,clk,Q);
 nand (Q,X,Qbar);  
 nand (Qbar,Y,Q);  
 endmodule  
-
+```
 - ### D FLIPFLOP :
-
+```python
 module dexp(D,clk,Q,Qbar);  
 input D,clk;  
 output Q,Qbar;  
@@ -169,9 +169,9 @@ nand (Y,Dbar,clk);
 nand (Q,X,Qbar);  
 nand (Qbar,Y,Q);  
 endmodule  
-
+```
 - ### T FLIP-FLOP :
-
+```python
 module texp(T,clk,Q,Qbar);  
 input T,clk;  
 output Q,Qbar;  
@@ -181,7 +181,7 @@ nand (R,T,clk,Q);
 nand (Q,S,Qbar);   
 nand (Qbar,R,Q);  
 endmodule  
-
+```
 ## RTL LOGIC FOR FLIP-FLOPS :
 
 - ### RTL FOR SR FLIP-FLOP :
